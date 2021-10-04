@@ -8,11 +8,11 @@
 </head>
 <body>
     <?php
-        echo "Merci $_POST[firstName] $_POST[lastName] de nous avoir contacté à propos de $_POST[subject_message]. " . "<br>"; 
+        echo "Merci {$_POST[firstName]} {$_POST[lastName]} de nous avoir contacté à propos de {$_POST[subject_message]}. " . "<br>"; 
 
-        echo "Un de nos conseiller vous contactera soit à l’adresse $_POST[user_mail] ou par téléphone au $_POST[phone_number] dans les plus brefs délais pour traiter votre demande : " . "<br>";
+        echo "Un de nos conseiller vous contactera soit à l’adresse {$_POST[user_mail]} ou par téléphone au {$_POST[phone_number]} dans les plus brefs délais pour traiter votre demande : " . "<br>";
         
-        echo "$_POST[user_message]" . "<br>";
+        echo "{$_POST[user_message]}" . "<br>";
     ?>
 </body>
 </html>
